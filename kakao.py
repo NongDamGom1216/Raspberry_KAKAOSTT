@@ -8,7 +8,7 @@ from pydub.playback import play
 URL = "https://kakaoi-newtone-openapi.kakao.com/v1/synthesize"
 HEADERS = {
     "Content-Type" : "application/xml",
-    "Authorization" : "KakaoAK 91993241356264156056f235e6563db3"
+    "Authorization" : "KakaoAK your api"
 }
 DATA=""
 
@@ -16,7 +16,7 @@ kakao_speech_url = "https://kakaoi-newtone-openapi.kakao.com/v1/recognize"
 
 # 샘플 다운로드 https://developers.kakao.com/docs/latest/ko/voice/rest-api
 
-rest_api_key = '91993241356264156056f235e6563db3'
+rest_api_key = 'your api'
 headers = {
     "Content-Type": "application/octet-stream",
     # 바이트 타입

@@ -7,7 +7,7 @@ import time
 led = LED(16)
 servo = Servo(23)
 
-API_key = '&appid=51c40a7cd6654a35eee5a1b70456107e'
+API_key = '&appid=yout weather api'
 apiurl = 'https://api.openweathermap.org/data/2.5/weather?q='
 
 def weather(city):
