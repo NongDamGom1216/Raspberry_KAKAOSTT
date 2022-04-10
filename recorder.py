@@ -8,10 +8,10 @@ button = Button(21, bounce_time=0.03)
 
 WAVE_OUTPUT_FILENAME = "output.wav"
 
-
 def record_audio():
     global audio
     recognizer = sr.Recognizer()
+
 
     # 마이크 설정
     microphone = sr.Microphone(sample_rate=16000)
@@ -22,12 +22,12 @@ def record_audio():
         audio = result.get_wav_data()
     
     button.when_released = audio_save
-    # 버튼을 뗀 경우 녹음 종료 및 저장
         
 def audio_save():
     global audio
     # 음성을 받아서 wav 파일로 저장
     print("Recording is finished.")
+
     with open(WAVE_OUTPUT_FILENAME, "wb") as f:
         f.write(audio)
 
